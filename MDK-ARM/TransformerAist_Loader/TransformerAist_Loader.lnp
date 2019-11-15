@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"transformeraist_loader\startup_stm32l031xx.o"
+"transformeraist_loader\main.o"
+"transformeraist_loader\stm32l0xx_it.o"
+"transformeraist_loader\stm32l0xx_hal_msp.o"
+"transformeraist_loader\stm32l0xx_hal_iwdg.o"
+"transformeraist_loader\stm32l0xx_hal_tim.o"
+"transformeraist_loader\stm32l0xx_hal_tim_ex.o"
+"transformeraist_loader\stm32l0xx_hal_uart.o"
+"transformeraist_loader\stm32l0xx_hal_uart_ex.o"
+"transformeraist_loader\stm32l0xx_hal.o"
+"transformeraist_loader\stm32l0xx_hal_i2c.o"
+"transformeraist_loader\stm32l0xx_hal_i2c_ex.o"
+"transformeraist_loader\stm32l0xx_hal_rcc.o"
+"transformeraist_loader\stm32l0xx_hal_rcc_ex.o"
+"transformeraist_loader\stm32l0xx_hal_flash_ramfunc.o"
+"transformeraist_loader\stm32l0xx_hal_flash.o"
+"transformeraist_loader\stm32l0xx_hal_flash_ex.o"
+"transformeraist_loader\stm32l0xx_hal_gpio.o"
+"transformeraist_loader\stm32l0xx_hal_dma.o"
+"transformeraist_loader\stm32l0xx_hal_pwr.o"
+"transformeraist_loader\stm32l0xx_hal_pwr_ex.o"
+"transformeraist_loader\stm32l0xx_hal_cortex.o"
+"transformeraist_loader\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "TransformerAist_Loader\TransformerAist_Loader.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TransformerAist_Loader.map" -o TransformerAist_Loader\TransformerAist_Loader.axf
